@@ -1,0 +1,295 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.title {
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 3%;
+  margin-left: 3%;
+}
+
+
+.filter, .restaurant-list {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.1rem;
+  margin-left: 3%;
+}
+
+.restaurant-list {
+  margin-top: 10px;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.navbar-brand {
+  width: 100%;
+  text-align: center;
+  font-size: 1.8rem !important;
+}
+
+.navbar-brand button {
+  float: left;
+  position: fixed;
+  margin-top: 1%;
+}
+
+nav.navbar.is-primary {
+  background-color: lightcoral;
+}
+
+button.button.is-info {
+  background-color: mediumvioletred;
+}
+
+.filter .dropdown {
+  margin-left: 1%;
+  margin-right: 0.5%;
+}
+
+.restaurant-info {
+  width: 80% !important;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.restaurant-info .card {
+  width: 100%;
+}
+
+.col-md-6 {
+  max-width: 90% !important;
+}
+
+.card {
+  border: 1px solid #ccc;
+  border-bottom: 0.5px;
+  border-radius: 3px;
+  float: top;
+  height: 100%;
+}
+
+.card-image img {
+  left: 0px;
+  top: 55px;
+  height: 100px;
+  position: absolute;
+}
+
+.card-header {
+  display: inline-block;
+  height: 40px;
+}
+
+.card-content {
+  height: auto;
+}
+
+.card-content .field {
+  float: right;
+  display: block;
+  width: 60%;
+  text-align: left;
+}
+
+.card-content .field p {
+  float: right;
+}
+
+.card-content .field label {
+  display: inline;
+}
+
+.card-content button {
+  display: inline;
+  position: absolute;
+  right: 2%;
+  bottom: 4%;
+}
+
+
+.modal {
+  font-size: 40px;
+  width: 100%;
+}
+.modal > .header {
+  width: 100%;
+  border-bottom: 1px solid gray;
+  font-size: 18px;
+  text-align: center;
+  padding: 5px;
+}
+.modal > .content {
+  width: 100%;
+  padding: 10px 5px;
+}
+
+.field .is-horizontal {
+  float: initial;
+}
+
+.button.button.guest-button {
+  margin-left: 5%;
+  position: initial;
+  background-color: lavenderblush;
+  border-color: #282c34;
+}
+
+button#button-state-Quit.button {
+  background-color: silver;
+}
+
+button#edit-button.button {
+  background-color: seashell;
+}
+
+button#button-state-Join.button {
+  background-color: pink;
+}
+
+.view_create button.button {
+  background-color: peachpuff;
+}
+
+.buttons a.button {
+  background-color: seashell;
+}
+
+.is-horizontal .field-label {
+  display: flex;
+}
+
+.field-label label{
+  width: 35%;
+  text-align: right;
+  font-size: 1.1rem;
+}
+
+.field-label .label {
+  font-size: 1.1rem;
+  margin: inherit;
+}
+
+label.label{
+  margin-right: 35px;
+}
+
+.popup_create li {
+  margin-bottom: 1%;
+}
+
+.popup-content {
+  /*background-color: darkseagreen;*/
+  width: auto !important;
+  height: auto;
+  position: relative;
+}
+
+.popup-content .container {
+  margin-top: 3%;
+
+}
+
+.auth-control button {
+  float: right;
+  right: 5%;
+  bottom: 10%;
+  position: absolute;
+}
+
+
+.popup_guest{
+  text-align: center;
+}
+
+.viewList {
+  display: contents !important;
+  font-weight: 100;
+}
+
+.popup_guest button.button.guest-button {
+  font-size: smaller;
+  background: antiquewhite;
+}
+
+.popup-overlay .popup-content .container {
+  background-color: none;
+  margin: 0px;
+}
+
+.popup-overlay .popup-content  {
+  background-color: pink !important;
+}
+
+#button-state-Quit {
+  background-color: gold;
+}
+
+.personal_info {
+  padding-left: 200px;
+}
+
+.popup-content  .card-image img{
+  top: -50px
+}
+
+.profile_content .popup-content{
+  position: absolute;
+  width: 90% !important;
+  border: 1px solid;
+ }
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  word-break: break-word;
+}
+
+#edit-button {
+  left: 50%;
+}
+
+.rest_filters .filter {
+  display: inline;
+}
+
+.view_create {
+  float: right;
+  margin-right: 10%;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.tag{
+  border: 1px solid green;
+}
