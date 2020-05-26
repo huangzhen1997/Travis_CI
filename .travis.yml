@@ -12,5 +12,7 @@ notifications:
     on_failure: always
 script:
   - npm test
-  - unset CI 
-  - npm run build
+  - CI=false npm run build
+after_success:
+  - npm install -g firebase-tools
+  - firebase deploy --token $FIREBASE_TOKEN --non-interactive
