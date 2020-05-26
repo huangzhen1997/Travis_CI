@@ -4,6 +4,12 @@ node_js:
 cache:
   directories:
   - node_modules
+notifications:
+  email:
+    recipients:
+      - huangzhen9706@gmail.com
+    on_success: always
+    on_failure: always
 script:
   - npm test
   - unset CI 
