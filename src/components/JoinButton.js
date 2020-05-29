@@ -166,10 +166,10 @@ const JoinButton = (props) => {
     //     }
     // }
 
-
     return (
         <Button
             data-testid = {'join-button'}
+            data-cy = "cy-button"
             id={'button-state-' + value}
             key={username}
             onClick={() => Clicking()} disabled={username === null || (MaxReached() && value === "Join")}>
@@ -179,5 +179,3 @@ const JoinButton = (props) => {
 };
 
 export default JoinButton;
-
-
