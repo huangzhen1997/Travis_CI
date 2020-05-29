@@ -1,9 +1,10 @@
-import { render } from '@testing-library/react'
+import { render,fireEvent} from '@testing-library/react'
 import React from "react";
 import { getByTestId } from '@testing-library/dom';
 import Restaurant from "./Restaurant/Restaurant";
+import JoinButton from "./JoinButton";
 
-test('the button works as expected', async () => {
+test('Image loading as expected, the button works as expected', async () => {
 
 
     const name_input = "Zhen Huang";
@@ -45,7 +46,11 @@ test('the button works as expected', async () => {
 
     const {getByTestId} = render(<Restaurant name={name_input[0]} event={event_input[0]} people={people_input[0]}/>);
     const image = await getByTestId('image-testing');
+    const button = await getByTestId('join-button');
+
     expect(image).toBeInTheDocument();
 
+    fireEvent.click(button);
+    expect(button).toBeInTheDocument();
 });
 

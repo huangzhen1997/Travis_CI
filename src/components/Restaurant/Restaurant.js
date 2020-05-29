@@ -181,7 +181,6 @@ const Restaurant = ({ name, event, people }) => {
                             <p className='join-button'>
                                 <EditPopUp {...propsforEdit} />
                                 <JoinButton {...propsForJoin} />
-
                             </p>
 
                         </Button.Group>
