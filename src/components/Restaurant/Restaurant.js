@@ -13,7 +13,7 @@ const ref = storage.child("img").child("buffalo.jpg");
 
 
 const Restaurant = ({ name, event, people }) => {
-    console.log(event);
+
     const [image, setImage] = useState("");
     const [joined, setJoined] = useState(false);
     const meals = ['Breakfast', 'Lunch', 'Dinner'];
@@ -126,7 +126,7 @@ const Restaurant = ({ name, event, people }) => {
     return (
         <li>
             <Card>
-                <Card.Image>
+                <Card.Image data-testid = "image-testing">
                     <img src={event.imageURL} style={{ width: 300, height: 200 }} alt="Logo" />
                 </Card.Image>
 

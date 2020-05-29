@@ -22,6 +22,8 @@ const App = () => {
 	const [schedule, setSchedule] = useState({ title: '', events: [], People: [] });
 	const [currPage, setCurrPage] = useState("login");
 
+	console.log(schedule);
+
 
 	const handleLogout = () => {
 		firebase
