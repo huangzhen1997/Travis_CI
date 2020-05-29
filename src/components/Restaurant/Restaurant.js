@@ -126,9 +126,9 @@ const Restaurant = ({ name, event, people }) => {
     return (
         <li>
             <Card>
-                {/*<Card.Image data-testid = "image-testing">*/}
-                {/*    <img src={event.imageURL} style={{ width: 300, height: 200 }} alt="Logo" />*/}
-                {/*</Card.Image>*/}
+                <Card.Image data-testid = "image-testing">
+                    <img src={event.imageURL} style={{ width: 300, height: 200 }} alt="Logo" />
+                </Card.Image>
 
                 <Card.Header>
                     {event["name"]}
