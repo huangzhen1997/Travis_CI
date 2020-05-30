@@ -22,7 +22,7 @@ notifications:
     on_failure: always
 
 script:
-  - npm test:ci
+  - npm run test:ci
   - CI=false npm run build
 
 after_success:
