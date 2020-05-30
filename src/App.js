@@ -56,8 +56,8 @@ const App = () => {
 
 
 	return (!initialRender && (
-		<Router>
-			<HeaderBar title={schedule.title} user={user} />
+		<Router >
+			<HeaderBar title={schedule.title} user={user}  />
 			<Switch>
 				<Route exact path="/" component={Login} />
 				<Route exact path="/restaurant" component={() =>

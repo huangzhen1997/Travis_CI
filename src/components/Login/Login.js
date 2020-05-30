@@ -19,7 +19,7 @@ const Login = () => {
   };
 
   return (
-    <StyledFirebaseAuth uiConfig={uiConfig} firebaseAuth={firebase.auth()} />
+    <StyledFirebaseAuth data-cy = "title-testing" uiConfig={uiConfig} firebaseAuth={firebase.auth()}  />
   );
 };
 
